@@ -1,7 +1,7 @@
 import pandas as pd
-netflix_titles = pd.read_csv("Desktop/archive/netflix_titles.csv")
-IMDb_movies = pd.read_csv("Desktop/archive/IMDb movies.csv")
-IMDb_ratings = pd.read_csv("Desktop/archive/IMDb ratings.csv")
+netflix_titles = pd.read_csv("netflix_titles.csv")
+IMDb_movies = pd.read_csv("IMDb movies.csv")
+IMDb_ratings = pd.read_csv("IMDb ratings.csv")
 
 movie_ratings = pd.merge(IMDb_movies, IMDb_ratings, how = "outer", on = 'imdb_title_id')
 ratings_netflix = pd.merge(movie_ratings, netflix_titles, how = "outer", on = 'title')
