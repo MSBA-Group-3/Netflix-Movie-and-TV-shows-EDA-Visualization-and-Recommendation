@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import pandas as pd
 
-# Scraping IMDB reviews for the movie 'Inception' using Selenium
+# Scraping IMDB reviews ( titles only ) for the movie 'Inception' using Selenium
 
 PATH = "/Users/sauravjayan/Downloads/chromedriver"
 
